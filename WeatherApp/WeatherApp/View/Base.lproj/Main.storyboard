@@ -51,6 +51,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="DUs-R0-SP9" eventType="touchUpInside" id="be2-yY-68B"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -68,7 +71,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-45-lw1">
                                                 <rect key="frame" x="9" y="135" width="211" height="105"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-rU-KIu">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-rU-KIu">
                                                         <rect key="frame" x="0.0" y="0.0" width="102" height="105"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="NBl-fJ-Gap"/>
@@ -120,7 +123,7 @@
                         <outlet property="searchButton" destination="xvv-Jh-jVz" id="D0l-1b-28G"/>
                         <outlet property="searchTextField" destination="EBh-vC-mOy" id="dG5-Dt-n2H"/>
                         <outlet property="temperatureLabel" destination="AVi-rU-KIu" id="WLT-3B-jfz"/>
-                        <outlet property="watherImage" destination="iNd-pU-wyC" id="9F7-OI-tuj"/>
+                        <outlet property="weatherImage" destination="iNd-pU-wyC" id="9F7-OI-tuj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl7-Ff-TkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
