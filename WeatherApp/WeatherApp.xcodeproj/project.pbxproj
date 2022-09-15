@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				358B1AEE28D33C0800F1CE7D /* Model */,
-				358B1AF028D33C1400F1CE7D /* Controller */,
 				358B1AEF28D33C0D00F1CE7D /* View */,
+				358B1AF028D33C1400F1CE7D /* Controller */,
 				358B1ACC28D33BA800F1CE7D /* Info.plist */,
 			);
 			path = WeatherApp;

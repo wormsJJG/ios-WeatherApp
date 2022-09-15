@@ -114,6 +114,14 @@
                             <constraint firstItem="Y83-co-Tiy" firstAttribute="trailing" secondItem="8s5-Lv-iX2" secondAttribute="trailing" constant="16.670000000000002" id="xsD-f4-i1T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="jGW-N2-9hP" id="mTW-LE-s7f"/>
+                        <outlet property="findCurrentLocationButton" destination="bJ1-PL-rO2" id="brv-wD-mb5"/>
+                        <outlet property="searchButton" destination="xvv-Jh-jVz" id="D0l-1b-28G"/>
+                        <outlet property="searchTextField" destination="EBh-vC-mOy" id="dG5-Dt-n2H"/>
+                        <outlet property="temperatureLabel" destination="AVi-rU-KIu" id="WLT-3B-jfz"/>
+                        <outlet property="watherImage" destination="iNd-pU-wyC" id="9F7-OI-tuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl7-Ff-TkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
