@@ -16,6 +16,10 @@
 		358B1AE028D33BA800F1CE7D /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1ADF28D33BA800F1CE7D /* WeatherAppUITests.swift */; };
 		358B1AE228D33BA800F1CE7D /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AE128D33BA800F1CE7D /* WeatherAppUITestsLaunchTests.swift */; };
 		358B1AF228D3416F00F1CE7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AF128D3416F00F1CE7D /* HomeViewController.swift */; };
+		358B1AF428D367AD00F1CE7D /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AF328D367AD00F1CE7D /* WeatherData.swift */; };
+		358B1AF628D367BA00F1CE7D /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AF528D367BA00F1CE7D /* WeatherManager.swift */; };
+		358B1AF828D367C400F1CE7D /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AF728D367C400F1CE7D /* WeatherModel.swift */; };
+		358B1AFB28D3696900F1CE7D /* WeatherManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B1AFA28D3696900F1CE7D /* WeatherManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		358B1ADF28D33BA800F1CE7D /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		358B1AE128D33BA800F1CE7D /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		358B1AF128D3416F00F1CE7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		358B1AF328D367AD00F1CE7D /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		358B1AF528D367BA00F1CE7D /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		358B1AF728D367C400F1CE7D /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		358B1AFA28D3696900F1CE7D /* WeatherManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,10 @@
 		358B1ABD28D33BA800F1CE7D /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				358B1AF928D3694700F1CE7D /* Protocol */,
 				358B1AEE28D33C0800F1CE7D /* Model */,
-				358B1AF028D33C1400F1CE7D /* Controller */,
 				358B1AEF28D33C0D00F1CE7D /* View */,
+				358B1AF028D33C1400F1CE7D /* Controller */,
 				358B1ACC28D33BA800F1CE7D /* Info.plist */,
 			);
 			path = WeatherApp;
@@ -127,6 +136,9 @@
 		358B1AEE28D33C0800F1CE7D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				358B1AF328D367AD00F1CE7D /* WeatherData.swift */,
+				358B1AF528D367BA00F1CE7D /* WeatherManager.swift */,
+				358B1AF728D367C400F1CE7D /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +161,14 @@
 				358B1AF128D3416F00F1CE7D /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		358B1AF928D3694700F1CE7D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				358B1AFA28D3696900F1CE7D /* WeatherManagerDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +304,10 @@
 			files = (
 				358B1ABF28D33BA800F1CE7D /* AppDelegate.swift in Sources */,
 				358B1AC128D33BA800F1CE7D /* SceneDelegate.swift in Sources */,
+				358B1AF628D367BA00F1CE7D /* WeatherManager.swift in Sources */,
+				358B1AF428D367AD00F1CE7D /* WeatherData.swift in Sources */,
+				358B1AFB28D3696900F1CE7D /* WeatherManagerDelegate.swift in Sources */,
+				358B1AF828D367C400F1CE7D /* WeatherModel.swift in Sources */,
 				358B1AF228D3416F00F1CE7D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

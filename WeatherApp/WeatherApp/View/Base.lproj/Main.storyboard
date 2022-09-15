@@ -32,6 +32,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="location.north.circle.fill" catalog="system" imagePadding="0.0">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didFindCurrentLocation:" destination="DUs-R0-SP9" eventType="touchUpInside" id="sCJ-57-ukP"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-vC-mOy">
                                                 <rect key="frame" x="69.333333333333314" y="0.0" width="218" height="44"/>
@@ -51,6 +54,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="DUs-R0-SP9" eventType="touchUpInside" id="be2-yY-68B"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -68,13 +74,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-45-lw1">
                                                 <rect key="frame" x="9" y="135" width="211" height="105"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-rU-KIu">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-rU-KIu">
                                                         <rect key="frame" x="0.0" y="0.0" width="102" height="105"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="NBl-fJ-Gap"/>
                                                             <constraint firstAttribute="height" constant="105" id="g6m-dy-tkk"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="91"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="76"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -90,7 +96,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seoul" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-N2-9hP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="init" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-N2-9hP">
                                                 <rect key="frame" x="0.0" y="248" width="220" height="59"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="dgC-wI-a19"/>
@@ -114,10 +120,18 @@
                             <constraint firstItem="Y83-co-Tiy" firstAttribute="trailing" secondItem="8s5-Lv-iX2" secondAttribute="trailing" constant="16.670000000000002" id="xsD-f4-i1T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="jGW-N2-9hP" id="mTW-LE-s7f"/>
+                        <outlet property="findCurrentLocationButton" destination="bJ1-PL-rO2" id="brv-wD-mb5"/>
+                        <outlet property="searchButton" destination="xvv-Jh-jVz" id="D0l-1b-28G"/>
+                        <outlet property="searchTextField" destination="EBh-vC-mOy" id="dG5-Dt-n2H"/>
+                        <outlet property="temperatureLabel" destination="AVi-rU-KIu" id="WLT-3B-jfz"/>
+                        <outlet property="weatherImage" destination="iNd-pU-wyC" id="9F7-OI-tuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl7-Ff-TkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32.307692307692307" y="-24.170616113744074"/>
+            <point key="canvasLocation" x="-434" y="-29"/>
         </scene>
     </scenes>
     <resources>
