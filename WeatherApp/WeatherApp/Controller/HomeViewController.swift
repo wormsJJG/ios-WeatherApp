@@ -29,6 +29,10 @@ class HomeViewController: UIViewController {
         locationManger.requestWhenInUseAuthorization()
     }
     
+    @IBAction func didFindCurrentLocation(_ sender: Any) {
+        locationManger.requestLocation()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initSetting()

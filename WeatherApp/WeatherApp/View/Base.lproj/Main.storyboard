@@ -32,6 +32,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="location.north.circle.fill" catalog="system" imagePadding="0.0">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didFindCurrentLocation:" destination="DUs-R0-SP9" eventType="touchUpInside" id="sCJ-57-ukP"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-vC-mOy">
                                                 <rect key="frame" x="69.333333333333314" y="0.0" width="218" height="44"/>
@@ -77,7 +80,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="NBl-fJ-Gap"/>
                                                             <constraint firstAttribute="height" constant="105" id="g6m-dy-tkk"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="49"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="76"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -128,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl7-Ff-TkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32.307692307692307" y="-24.170616113744074"/>
+            <point key="canvasLocation" x="-434" y="-29"/>
         </scene>
     </scenes>
     <resources>
