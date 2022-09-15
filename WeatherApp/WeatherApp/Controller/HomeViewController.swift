@@ -17,8 +17,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak private var temperatureLabel: UILabel!
     @IBOutlet weak private var cityLabel: UILabel!
     
-    private var weatherManger = WeatherManager()
-    private let locationManger = CLLocationManager()
+    var weatherManger = WeatherManager()
+    let locationManger = CLLocationManager()
     
     private func initSetting() {
         locationManger.delegate = self
@@ -85,7 +85,6 @@ extension HomeViewController: UITextFieldDelegate {
         if let city = searchTextField.text {
             weatherManger.fetchWeather(cityName: city)
         }
-        
         searchTextField.text = ""
     }
 }

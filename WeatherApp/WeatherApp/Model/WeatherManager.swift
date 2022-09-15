@@ -38,6 +38,7 @@ struct WeatherManager {
                     }
                 }
             }
+            task.resume()
         }
     }
     
@@ -49,7 +50,7 @@ struct WeatherManager {
             let id = decodeData.weather[0].id
             let temp = decodeData.main.temp
             let name = decodeData.name
-            
+            print("sucess\(temp)")
             let weather = WeatherModel(conditionID: id, cityName: name, temperature: temp)
             return weather
         } catch {
